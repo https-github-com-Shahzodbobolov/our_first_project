@@ -1,0 +1,136 @@
+*{
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+.section{
+  .container-fluid1{
+    .menu{
+      position: fixed;
+      width: 100%;
+      justify-content: space-around;
+      align-items: center;
+      height: 100px;
+      background-color: white;
+      display: flex;
+      ul{
+        display: flex;
+        list-style: none;
+        li{
+          a{
+            text-decoration: none;
+          }
+        }
+      }
+      .logo{
+        margin-top: 10px;
+        margin-left: 30px;
+        li{
+
+        }
+      }
+      .nav1{
+        margin-top: 15px;
+        margin-left: 80px;
+        li{
+          margin-left: 40px;
+          font-size: 16px;
+          font-family: 'Josefin Sans', sans-serif;
+          font-weight: bold;
+          a{
+            letter-spacing: 1px;
+            color: black;
+            &:hover{
+              color: red;
+            }
+          }
+        }
+      }
+      .navicon{
+        margin-top: 16px;
+        margin-right: 30px;
+        li{
+         a{
+           margin-left: 50px;
+           color: black;
+           &:hover{
+             color: red;
+           }
+         }
+
+
+        }
+      }
+    }
+    .wrapper{
+      overflow: hidden;
+      height: 1100px;
+      background-color: #F0F0F2;
+      align-items: center;
+      display: flex;
+      justify-content: space-evenly;
+      .text{
+        text-align: left;
+        p{
+          font-size: 95px;
+          margin-top: 180px;
+          font-family: 'Josefin Sans', sans-serif;
+          text-transform: capitalize;
+          font-weight: bolder;
+          margin-left: 90px;
+          line-height: 115px;
+
+          color: #0C1D39
+        ;
+
+        }
+        h5{
+          margin-top: 60px;
+          font-family: 'Josefin Sans', sans-serif;
+          font-weight: 700!important;
+          text-transform: capitalize;
+          margin-left: 95px;
+          letter-spacing: 1px;
+          color: #0C1D39;
+          line-height: 40px;
+        }
+        .button{
+          position: relative;
+          background-color: #4A4A4B;
+          margin-top: 60px;
+          padding: 16px 35px;
+          text-align: center;
+          margin-left: 95px;
+          font-family: 'Josefin Sans', sans-serif;
+          color: white;
+          border: transparent;
+          text-transform: uppercase;
+          z-index: 1;
+          text-decoration: none;
+          letter-spacing: 1px;
+          &:before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transition: transform 300ms ease-in-out;
+            background-color: red;
+            transform: scaleX(0);
+            z-index: -1;
+            transform-origin: left;
+          }
+          &:hover:before{
+            transform: scaleX(1);
+          }
+
+        }
+      }
+      .watchright{
+        margin-top: 100px;
+        margin-right: 50px;
+      }
+    }
+  }
+}
