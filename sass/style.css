@@ -150,16 +150,75 @@
       margin-left: -15px;
       display: flex;
       flex-wrap: wrap; }
-      .gallery .img-gallery .row img {
-        transition: all 0.4s ease-out;
-        transform: scale(1.06); }
-        .gallery .img-gallery .row img:hover {
-          transform: scale(1); }
       .gallery .img-gallery .row .big-img {
+        position: relative;
         margin-bottom: 40px;
         overflow: hidden; }
+        .gallery .img-gallery .row .big-img .img1 {
+          background-image: url(../img/gallery/gallery1.png); }
+        .gallery .img-gallery .row .big-img .img2 {
+          background-image: url(../img/gallery/gallery2.png); }
+        .gallery .img-gallery .row .big-img .img1,
+        .gallery .img-gallery .row .big-img .img2 {
+          height: 690px;
+          background-repeat: no-repeat;
+          background-size: cover;
+          transition: all 0.4s linear;
+          transform: scale(1.05); }
+        .gallery .img-gallery .row .big-img:hover .img1 {
+          transform: scale(1); }
+        .gallery .img-gallery .row .big-img:hover .img2 {
+          transform: scale(1); }
+        .gallery .img-gallery .row .big-img::before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          height: 100%;
+          width: 100%;
+          content: "";
+          background-color: rgba(1, 10, 28, 0.3);
+          opacity: 0;
+          z-index: 1;
+          transition: all 0.4s ease-out 0s; }
+        .gallery .img-gallery .row .big-img:hover::before {
+          opacity: 1;
+          visibility: visible; }
       .gallery .img-gallery .row .small-img {
-        margin-bottom: 40px;
-        overflow: hidden; }
+        margin-bottom: 30px;
+        overflow: hidden;
+        position: relative; }
+        .gallery .img-gallery .row .small-img .img3 {
+          background-image: url(../img/gallery/gallery1.png); }
+        .gallery .img-gallery .row .small-img .img4 {
+          background-image: url(../img/gallery/gallery2.png); }
+        .gallery .img-gallery .row .small-img .img3,
+        .gallery .img-gallery .row .small-img .img4 {
+          height: 330px;
+          background-repeat: no-repeat;
+          background-size: cover;
+          transition: all 0.4s linear;
+          transform: scale(1.05); }
+        .gallery .img-gallery .row .small-img:hover .img3 {
+          transform: scale(1); }
+        .gallery .img-gallery .row .small-img:hover .img4 {
+          transform: scale(1); }
+        .gallery .img-gallery .row .small-img::before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          height: 100%;
+          width: 100%;
+          content: "";
+          background-color: rgba(1, 10, 28, 0.3);
+          opacity: 0;
+          z-index: 1;
+          transition: all 0.4s ease-out 0s; }
+        .gallery .img-gallery .row .small-img:hover::before {
+          opacity: 1;
+          visibility: visible; }
 
 /*# sourceMappingURL=style.css.map */
