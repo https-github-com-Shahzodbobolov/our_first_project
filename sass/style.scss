@@ -1,15 +1,14 @@
+// ================= Navbar Section | logo | Home Page ======================//
+
 * {
 	margin: 0 auto;
 	padding: 0;
 	box-sizing: border-box;
 }
-
-// =================Navbar Section | logo | Home Page======================
-//=========================================================================
-// ==========================================================================
 .section {
 	.container-fluid1 {
 		.menu {
+			z-index: 1000;
 			position: fixed;
 			width: 100%;
 			justify-content: space-around;
@@ -17,7 +16,7 @@
 			height: 100px;
 			background-color: white;
 			display: flex;
-			z-index: 99;
+
 			box-shadow: 0 0 10px rgba($color: #cfcece, $alpha: 0.8);
 
 			ul {
@@ -146,14 +145,23 @@
 			.watchright {
 				margin-top: 100px;
 				margin-right: 50px;
+				transform: scale(1);
+				animation: transforms 2s ease-in-out infinite alternate;
+			}
+
+			@keyframes transforms {
+				0% {
+					transform: scale(1);
+				}
+				100% {
+					transform: scale(0.95);
+				}
 			}
 		}
 	}
 }
 
-//==================New Arrivals Section | products and price===============
-//==========================================================================
-//==========================================================================
+//================== New Arrivals Section | products and price ===============//
 .newArrivalsSection {
 	padding: 0;
 	margin-bottom: 20vh;
@@ -213,6 +221,7 @@
 		}
 	}
 }
+
 //===================== Gallery Section! ====================================
 //===========================================================================
 //===========================================================================
@@ -278,10 +287,10 @@
 				overflow: hidden;
 				position: relative;
 				.img3 {
-					background-image: url(../img/gallery/gallery1.png);
+					background-image: url(../img/gallery/gallery3.png);
 				}
 				.img4 {
-					background-image: url(../img/gallery/gallery2.png);
+					background-image: url(../img/gallery/gallery4.png);
 				}
 				.img3,
 				.img4 {
@@ -316,6 +325,181 @@
 					opacity: 1;
 					visibility: visible;
 				}
+			}
+		}
+	}
+
+	.gallery {
+		display: block;
+
+		.img-gallery {
+			padding: 0 !important;
+			overflow: hidden;
+
+			.row {
+				img {
+					transition: all 0.4s ease-out;
+					transform: scale(1.06);
+
+					&:hover {
+						transform: scale(1);
+					}
+				}
+
+				margin-right: -15px;
+				margin-left: -15px;
+				display: flex;
+				flex-wrap: wrap;
+
+				.big-img {
+					margin-bottom: 40px;
+					overflow: hidden;
+				}
+
+				.small-img {
+					margin-bottom: 40px;
+					overflow: hidden;
+				}
+			}
+		}
+	}
+}
+//======================= Popular Items Section ===============================//
+.popular {
+	margin-bottom: 50px;
+	margin-top: 180px;
+	span {
+		text-align: center;
+		text-transform: capitalize;
+		color: #0d1e39;
+		h3 {
+			font-family: "Josefin Sans", sans-serif;
+			font-size: 48px;
+			font-weight: 550;
+		}
+		p {
+			margin-top: 10px;
+			letter-spacing: 1px;
+			font-family: "Josefin Sans", sans-serif;
+			.span {
+				background-color: red;
+				padding: 8px 16px;
+				text-align: center;
+			}
+		}
+	}
+	.container {
+		margin-top: 80px;
+		.row {
+			.col-md-4 {
+				position: relative;
+				.hover {
+					z-index: 1;
+					transition: transform 300ms ease-in-out;
+					width: 361px;
+					height: 380px;
+					position: absolute;
+					background-color: transparent;
+					opacity: 1;
+					top: 0;
+					left: 14px;
+					.button1 {
+						transition: transform 0.4s ease-in-out;
+						transform: translateY(50px);
+						background-color: red;
+						color: white;
+						font-family: "Josefin Sans", sans-serif;
+						font-size: 18px;
+						text-align: center;
+						padding: 15px 0;
+						position: absolute;
+						bottom: 0;
+						left: 0;
+						width: 100%;
+						border: transparent;
+						&:before {
+							content: "";
+							z-index: -1;
+							position: absolute;
+							top: 0;
+							left: 0;
+							right: 0;
+							bottom: 0;
+							background-color: #4a4a4b;
+							transform: scaleX(0);
+							transform-origin: center;
+							transition: transform 300ms ease-in-out;
+						}
+						&:hover:before {
+							transform: scaleX(1);
+						}
+					}
+					a {
+						transition: all 0.3s ease-in-out;
+						opacity: 0;
+						font-weight: lighter;
+						position: absolute;
+						right: 20px;
+						top: 10px;
+						color: #0c1d39;
+						font-size: 32px;
+						&:hover {
+							transform: scale(1.2);
+							color: red;
+						}
+						&:focus {
+							transform: scale(1.2);
+							color: red;
+						}
+					}
+				}
+				&:hover .hover .button1 {
+					transform: translateY(0);
+				}
+				&:hover .hover a {
+					opacity: 1;
+				}
+
+				span {
+					z-index: 1000;
+					overflow: hidden;
+					p:nth-child(1) {
+						font-size: 24px;
+					}
+				}
+			}
+		}
+		.row1 {
+			margin-top: 20px;
+		}
+		.button {
+			position: relative;
+			background-color: red;
+			color: white;
+			font-family: "Josefin Sans", sans-serif;
+			font-size: 18px;
+			text-align: center;
+			padding: 15px 30px;
+			border: transparent;
+			margin-top: 100px;
+			z-index: 1;
+			margin-left: 430px;
+			text-transform: uppercase;
+			&:before {
+				content: "";
+				z-index: -1;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background-color: #4a4a4b;
+				transform: scaleX(0);
+				transform-origin: left;
+				transition: transform 300ms ease-in-out;
+			}
+			&:hover:before {
+				transform: scaleX(1);
 			}
 		}
 	}
