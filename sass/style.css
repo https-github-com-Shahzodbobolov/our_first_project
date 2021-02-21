@@ -226,27 +226,6 @@
         .gallery .img-gallery .row .small-img:hover::before {
           opacity: 1;
           visibility: visible; }
-  .gallery .gallery {
-    display: block; }
-    .gallery .gallery .img-gallery {
-      padding: 0 !important;
-      overflow: hidden; }
-      .gallery .gallery .img-gallery .row {
-        margin-right: -15px;
-        margin-left: -15px;
-        display: flex;
-        flex-wrap: wrap; }
-        .gallery .gallery .img-gallery .row img {
-          transition: all 0.4s ease-out;
-          transform: scale(1.06); }
-          .gallery .gallery .img-gallery .row img:hover {
-            transform: scale(1); }
-        .gallery .gallery .img-gallery .row .big-img {
-          margin-bottom: 40px;
-          overflow: hidden; }
-        .gallery .gallery .img-gallery .row .small-img {
-          margin-bottom: 40px;
-          overflow: hidden; }
 
 .popular {
   margin-bottom: 50px;
@@ -361,6 +340,123 @@
         transform-origin: left;
         transition: transform 300ms ease-in-out; }
       .popular .container .button:hover:before {
+        transform: scaleX(1); }
+
+.video {
+  background-image: url(../img/gallery/sectin_bg1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 9rem;
+  position: relative; }
+  .video:hover .container-fluid .row .col-12 .play-btn a {
+    transform: scale(1); }
+  .video:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: rgba(2, 5, 12, 0.5);
+    opacity: 0;
+    z-index: 0;
+    transition: all 0.4s ease-out; }
+  .video:hover::before {
+    opacity: 1;
+    visibility: visible; }
+  .video .container-fluid .row .col-12 .play-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .video .container-fluid .row .col-12 .play-btn a {
+      position: relative;
+      text-decoration: none;
+      color: #fff;
+      height: 85px;
+      width: 85px;
+      font-size: 24px;
+      line-height: 24px;
+      border: 1px solid #fff;
+      padding-top: 29px;
+      padding-left: 33px;
+      border-radius: 50%;
+      transform: scale(0.9);
+      transition: all 0.4s ease-out; }
+      .video .container-fluid .row .col-12 .play-btn a:hover {
+        background: #fff;
+        color: red; }
+  .video .next-video-button {
+    position: absolute;
+    width: 500px;
+    height: 150px;
+    left: 0;
+    bottom: 0;
+    background-image: url(../img/gallery/vidoe_more.png);
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .video .next-video-button .wrapper {
+      display: flex;
+      font-size: 24px;
+      text-transform: capitalize;
+      font-family: "Josefin Sans", sans-serif;
+      color: #fff;
+      line-height: 150px; }
+      .video .next-video-button .wrapper a {
+        text-decoration: none;
+        color: #fff;
+        transition: all 0.5s ease-out;
+        padding: 2rem;
+        padding-top: 0; }
+        .video .next-video-button .wrapper a:hover {
+          transform: translateX(10px); }
+
+.watch-choice {
+  margin-top: 10rem; }
+  .watch-choice .container .row {
+    align-items: center; }
+    .watch-choice .container .row .pad-right {
+      padding-right: 60px; }
+    .watch-choice .container .row .pad-left {
+      padding-left: 80px; }
+    .watch-choice .container .row .col-6 p:nth-child(1) {
+      font-size: 50px;
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: 600;
+      text-transform: capitalize; }
+    .watch-choice .container .row .col-6 p:nth-child(2) {
+      margin-bottom: 3rem;
+      font-family: 'Josefin Sans',sans-serif; }
+    .watch-choice .container .row .col-6 button {
+      background-color: red;
+      color: white;
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 18px;
+      text-align: center;
+      padding: 15px 30px;
+      border: transparent;
+      text-transform: uppercase;
+      position: relative;
+      z-index: 1; }
+      .watch-choice .container .row .col-6 button::before {
+        content: "";
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #4a4a4b;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 300ms ease-in-out; }
+      .watch-choice .container .row .col-6 button:hover::before {
         transform: scaleX(1); }
 
 /*# sourceMappingURL=style.css.map */
