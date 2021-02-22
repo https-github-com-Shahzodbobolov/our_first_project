@@ -597,12 +597,12 @@
 	.container {
 		.row {
 			align-items: center;
-      .pad-right{
-        padding-right: 60px;
-      }
-      .pad-left{
-        padding-left: 80px;
-      }
+			.pad-right {
+				padding-right: 60px;
+			}
+			.pad-left {
+				padding-left: 80px;
+			}
 			.col-6 {
 				p:nth-child(1) {
 					font-size: 50px;
@@ -610,12 +610,72 @@
 					font-weight: 600;
 					text-transform: capitalize;
 				}
-        p:nth-child(2){
-          margin-bottom: 3rem;
-          font-family: 'Josefin Sans',sans-serif;
-        }
+				p:nth-child(2) {
+					margin-bottom: 3rem;
+					font-family: "Josefin Sans", sans-serif;
+				}
 				button {
 					@include button();
+				}
+			}
+		}
+	}
+}
+//=======================Shipping and Payment Method Section  ===================
+//============================================================================
+.shipping-method {
+	margin-top: 10rem;
+	margin-bottom: 8rem;
+	.container {
+		height: 230px;
+		.wrapper {
+			background-color: #ea0000;
+			height: 100%;
+			.row {
+				height: 100%;
+				align-items: center;
+				.col-lg-4 {
+					.card {
+						background: transparent;
+						border: none;
+						text-transform: capitalize;
+						color: #fff;
+						padding-top: 2rem;
+						padding-left: 2rem;
+						margin: 0;
+						i,
+						h4 {
+							display: inline-block;
+							margin: 0;
+							margin-bottom: 15px;
+						}
+						h4 {
+							font-weight: 600;
+							font-size: 22px;
+						}
+						p {
+							font-size: 16px;
+							color: gainsboro;
+						}
+						i {
+							font-size: 40px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+//======================= Footer Section  ====================================
+//============================================================================
+.footer {
+	margin: 8rem auto;
+	.container {
+		.row {
+			.col-lg-4 {
+				img {
+					margin-bottom: 3rem;
 				}
 			}
 		}
