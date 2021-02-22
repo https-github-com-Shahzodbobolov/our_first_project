@@ -5,6 +5,9 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+body {
+	overflow-x: hidden;
+}
 .section {
 	.container-fluid1 {
 		.menu {
@@ -283,7 +286,7 @@
 				}
 			}
 			.small-img {
-				margin-bottom: 30px;
+				margin-bottom: 30px !important;
 				overflow: hidden;
 				position: relative;
 				.img3 {
@@ -670,13 +673,70 @@
 //======================= Footer Section  ====================================
 //============================================================================
 .footer {
-	margin: 8rem auto;
+	margin: 12rem auto;
 	.container {
 		.row {
 			.col-lg-4 {
 				img {
 					margin-bottom: 3rem;
 				}
+				P {
+					color: #7c818d;
+				}
+			}
+			.col-lg-2,
+			.col-lg-3 {
+				h3 {
+					font-size: 20px;
+					padding-bottom: 20px;
+					text-transform: capitalize;
+				}
+				.list {
+					li {
+						list-style-type: none;
+						padding-bottom: 10px;
+						transition: 0.3s ease-out;
+						&:hover {
+							transform: translateX(5px);
+							a {
+								color: #ff2020;
+							}
+						}
+						a {
+							text-decoration: none;
+							color: #7c818d;
+							font-size: 1rem;
+							font-weight: 300;
+							text-transform: capitalize;
+						}
+					}
+				}
+			}
+		}
+		.copy_icons {
+			margin-top: 6rem;
+			display: flex;
+			justify-content: space-between;
+			.social-icons {
+				margin-right: 4rem;
+				a {
+					text-decoration: none;
+					color: #000;
+					&:hover i {
+						color: #ff2020;
+						transform: rotateY(180deg);
+						--webkit-transform: rotateY(180deg);
+					}
+					i {
+						padding: 0 1rem;
+						transition: 0.4s ease-out;
+					}
+				}
+			}
+			.copyright {
+				font-size: 1rem;
+				color: #7c818d;
+				margin-left: 0;
 			}
 		}
 	}
