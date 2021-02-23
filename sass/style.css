@@ -496,7 +496,7 @@ body {
             font-size: 40px; }
 
 .footer {
-  margin: 12rem auto; }
+  margin: 12rem auto 4rem auto; }
   .footer .container .row .col-lg-4 img {
     margin-bottom: 3rem; }
   .footer .container .row .col-lg-4 P {
