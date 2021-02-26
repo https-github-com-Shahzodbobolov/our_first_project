@@ -543,6 +543,6 @@ body {
     .footer .container .copy_icons .copyright {
       font-size: 1rem;
       color: #7c818d;
-      margin-left: 0; }
+      margin-left: -45px !important; }
 
 /*# sourceMappingURL=style.css.map */

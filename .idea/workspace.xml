@@ -20,13 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="929b4c11-4edc-453f-a1e8-9cc3ee26846a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.sass-cache/62b86d7c83c95541638b91ce8a8e4ba3990c8883/style3.scssc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/main3.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass/style3.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/3b9b8e87beefc21f782c9913e4c4e23feeaaff81/shop.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/3b9b8e87beefc21f782c9913e4c4e23feeaaff81/style.scssc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main2.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/shop.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main2.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/shop.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/.sass-cache/3b9b8e87beefc21f782c9913e4c4e23feeaaff81/style.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/sass/.sass-cache/3b9b8e87beefc21f782c9913e4c4e23feeaaff81/style.scssc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/style2.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/shop.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +82,7 @@
       <workItem from="1613905680096" duration="60000" />
       <workItem from="1614082102381" duration="28000" />
       <workItem from="1614082746160" duration="3147000" />
-      <workItem from="1614355453029" duration="2759000" />
+      <workItem from="1614355453029" duration="3211000" />
     </task>
     <servers />
   </component>
