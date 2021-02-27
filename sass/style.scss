@@ -41,19 +41,81 @@ body {
 			.nav1 {
 				margin-top: 15px;
 				margin-left: 80px;
-
 				li {
 					margin-left: 40px;
 					font-size: 16px;
 					font-family: "Josefin Sans", sans-serif;
 					font-weight: bold;
-
 					a {
 						letter-spacing: 1px;
 						color: black;
-
+						transition: all 0.1s linear;
 						&:hover {
 							color: red;
+						}
+					}
+				}
+				li:hover .dropdown_menu {
+					visibility: visible;
+					opacity: 1;
+					transform: translateY(7px);
+				}
+				.hot {
+					a:nth-child(1) {
+						padding-bottom: 3rem;
+					}
+					position: relative;
+					&:before {
+						content: "HOT";
+						position: absolute;
+						font-size: 10px;
+						text-align: center;
+						box-shadow: 0 2px 5px #c1c1c1;
+						border-radius: 8px;
+						top: -20px;
+						right: -25px;
+						padding: 4px 4px 2px;
+						color: #fff;
+						font-weight: 300;
+						background-color: #ff2020;
+					}
+					.dropdown_menu {
+						position: absolute;
+						top: 55px;
+						left: -30px;
+						width: 180px;
+						border: 0.5px solid transparent;
+						display: flex;
+						flex-wrap: wrap;
+						padding: 20px 15px;
+						text-transform: capitalize;
+						line-height: 40px;
+						background-color: #fff;
+						border-radius: 3px;
+						border-top-left-radius: 10px;
+						border-top-right-radius: 10px;
+						visibility: hidden;
+						opacity: 0;
+						transition: all 0.1s linear;
+						z-index: 99999 !important;
+						border-top: 4px solid #ff2020;
+						box-shadow: 0 5px 15px #d8d7d7;
+						&:after {
+							position: absolute;
+							content: "";
+							top: -10px;
+							border-style: solid;
+							border-top-width: 0;
+							border-right-width: 6px;
+							border-bottom-width: 6px;
+							border-left-width: 6px;
+							border-color: transparent transparent red transparent;
+							left: 15%;
+							z-index: -1;
+							transition: all 0.1s linear;
+						}
+						li {
+							margin: 0;
 						}
 					}
 				}
@@ -735,7 +797,7 @@ body {
 			.copyright {
 				font-size: 1rem;
 				color: #7c818d;
-				margin-left: -45px!important;
+				margin-left: -45px !important;
 			}
 		}
 	}

@@ -34,9 +34,67 @@ body {
       font-weight: bold; }
       .section .container-fluid1 .menu .nav1 li a {
         letter-spacing: 1px;
-        color: black; }
+        color: black;
+        transition: all 0.1s linear; }
         .section .container-fluid1 .menu .nav1 li a:hover {
           color: red; }
+    .section .container-fluid1 .menu .nav1 li:hover .dropdown_menu {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(7px); }
+    .section .container-fluid1 .menu .nav1 .hot {
+      position: relative; }
+      .section .container-fluid1 .menu .nav1 .hot a:nth-child(1) {
+        padding-bottom: 3rem; }
+      .section .container-fluid1 .menu .nav1 .hot:before {
+        content: "HOT";
+        position: absolute;
+        font-size: 10px;
+        text-align: center;
+        box-shadow: 0 2px 5px #c1c1c1;
+        border-radius: 8px;
+        top: -20px;
+        right: -25px;
+        padding: 4px 4px 2px;
+        color: #fff;
+        font-weight: 300;
+        background-color: #ff2020; }
+      .section .container-fluid1 .menu .nav1 .hot .dropdown_menu {
+        position: absolute;
+        top: 55px;
+        left: -30px;
+        width: 180px;
+        border: 0.5px solid transparent;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px 15px;
+        text-transform: capitalize;
+        line-height: 40px;
+        background-color: #fff;
+        border-radius: 3px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.1s linear;
+        z-index: 99999 !important;
+        border-top: 4px solid #ff2020;
+        box-shadow: 0 5px 15px #d8d7d7; }
+        .section .container-fluid1 .menu .nav1 .hot .dropdown_menu:after {
+          position: absolute;
+          content: "";
+          top: -10px;
+          border-style: solid;
+          border-top-width: 0;
+          border-right-width: 6px;
+          border-bottom-width: 6px;
+          border-left-width: 6px;
+          border-color: transparent transparent red transparent;
+          left: 15%;
+          z-index: -1;
+          transition: all 0.1s linear; }
+        .section .container-fluid1 .menu .nav1 .hot .dropdown_menu li {
+          margin: 0; }
   .section .container-fluid1 .menu .navicon {
     margin-top: 16px;
     margin-right: 30px; }
