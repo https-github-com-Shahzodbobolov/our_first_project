@@ -95,6 +95,46 @@ body {
           transition: all 0.1s linear; }
         .section .container-fluid1 .menu .nav1 .hot .dropdown_menu li {
           margin: 0; }
+    .section .container-fluid1 .menu .nav1 .blog {
+      position: relative; }
+      .section .container-fluid1 .menu .nav1 .blog a:nth-child(1) {
+        padding-bottom: 3rem; }
+      .section .container-fluid1 .menu .nav1 .blog .dropdown_menu {
+        position: absolute;
+        top: 55px;
+        left: -30px;
+        width: 180px;
+        border: 0.5px solid transparent;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px 15px;
+        text-transform: capitalize;
+        line-height: 40px;
+        background-color: #fff;
+        border-radius: 3px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.1s linear;
+        z-index: 99999 !important;
+        border-top: 4px solid #ff2020;
+        box-shadow: 0 5px 15px #d8d7d7; }
+        .section .container-fluid1 .menu .nav1 .blog .dropdown_menu:after {
+          position: absolute;
+          content: "";
+          top: -10px;
+          border-style: solid;
+          border-top-width: 0;
+          border-right-width: 6px;
+          border-bottom-width: 6px;
+          border-left-width: 6px;
+          border-color: transparent transparent red transparent;
+          left: 15%;
+          z-index: -1;
+          transition: all 0.1s linear; }
+        .section .container-fluid1 .menu .nav1 .blog .dropdown_menu li {
+          margin: 0; }
   .section .container-fluid1 .menu .navicon {
     margin-top: 16px;
     margin-right: 30px; }
