@@ -20,20 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="929b4c11-4edc-453f-a1e8-9cc3ee26846a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Images/benjamin-child-GWe0dlVD9e0-unsplash.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/christopher-gower-vjMgqUkS8q8-unsplash.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/kaleidico-7lryofJ0H9s-unsplash.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/thai-an-vlMJn7t8Huk-unsplash.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/tyler-nix-sh3LSNbyj7k-unsplash.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/blog.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass/blog.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/contact.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sass/contact.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/details.html" beforeDir="false" afterPath="$PROJECT_DIR$/details.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +76,8 @@
       <workItem from="1614082746160" duration="3147000" />
       <workItem from="1614355453029" duration="3211000" />
       <workItem from="1614456391213" duration="21000" />
-      <workItem from="1614602889982" duration="11782000" />
+      <workItem from="1614602889982" duration="12008000" />
+      <workItem from="1614683974910" duration="4519000" />
     </task>
     <servers />
   </component>
